@@ -62,7 +62,7 @@ def convertir_PesoMexicano(request):
 
 def convertir_PesoColombiano(request):
     try:
-        ctd = request.GET["tbCantidad"] # obtener cantidad recibida por GET
+        ctd = int(request.GET["tbCantidad"]) # obtener cantidad recibida por GET
     except KeyError:
         ctd = -1
     
@@ -86,7 +86,7 @@ def convertir_PesoColombiano(request):
 
 def convertir_PesoChileno(request):
     try:
-        ctd = request.GET["tbCantidad"] # obtener cantidad recibida por GET
+        ctd = int(request.GET["tbCantidad"]) # obtener cantidad recibida por GET
     except KeyError:
         ctd = -1
     
@@ -110,7 +110,7 @@ def convertir_PesoChileno(request):
 
 def convertir_PesoArgentino(request):
     try:
-        ctd = request.GET["tbCantidad"] # obtener cantidad recibida por GET
+        ctd = int(request.GET["tbCantidad"]) # obtener cantidad recibida por GET
     except KeyError:
         ctd = -1
     
@@ -134,7 +134,7 @@ def convertir_PesoArgentino(request):
 
 def convertir_DolarAmericano(request):
     try:
-        ctd = request.GET["tbCantidad"] # obtener cantidad recibida por GET
+        ctd = int(request.GET["tbCantidad"]) # obtener cantidad recibida por GET
     except KeyError:
         ctd = -1
     
@@ -158,7 +158,7 @@ def convertir_DolarAmericano(request):
 
 def convertir_DolarCanadiense(request):
     try:
-        ctd = request.GET["tbCantidad"] # obtener cantidad recibida por GET
+        ctd = int(request.GET["tbCantidad"]) # obtener cantidad recibida por GET
     except KeyError:
         ctd = -1
     
@@ -182,7 +182,7 @@ def convertir_DolarCanadiense(request):
 
 def convertir_DolarAustraliano(request):
     try:
-        ctd = request.GET["tbCantidad"] # obtener cantidad recibida por GET
+        ctd = int(request.GET["tbCantidad"]) # obtener cantidad recibida por GET
     except KeyError:
         ctd = -1
     
@@ -206,7 +206,7 @@ def convertir_DolarAustraliano(request):
 
 def convertir_Euro(request):
     try:
-        ctd = request.GET["tbCantidad"] # obtener cantidad recibida por GET
+        ctd = int(request.GET["tbCantidad"]) # obtener cantidad recibida por GET
     except KeyError:
         ctd = -1
     

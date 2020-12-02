@@ -3,7 +3,7 @@
 {% block content%}
 <h3>Cambio de dolares australianos</h3>
 
-<form class="form-inline">
+<form class="form-inline" action="/convertir_DolarAustraliano/" method="GET">
     <p> &iquest;Planeando viajar dentro o fuera de Australia? &iexcl;Excelente, aqu&iacute; puedes cambiar tus monedas! </p>
     <p> Obtendr&aacute;s equivalencias en todos los dolares, pesos, euros y rublos soportados por el sistema </p>
     <br>
@@ -15,26 +15,26 @@
     <button type="submit" class="btn btn-primary mb-2">Convertir</button>
 </form>
 
-{% if conversiones %}
-    
-    <h3>Conversiones según los datos que introduciste</h3>
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">&nbsp;</th>
-                <th scope="col">Moneda</th>
-                <th scope="col">Equivalente</th>
-            </tr>
-        </thead>
-    {% for clave, valor in conversiones.items %}
-        <tbody>
-            <tr>
-                <th scope="row">&nbsp;</th>
-                <td>{{clave}}</td>
-                <td>{{valor}}</td>
-            </tr>
-        </tbody>
-    {% endfor %}
-</table>
-{% endif %}
+    {% if conversiones %}
+        
+        <h3>Conversiones según los datos que introduciste</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">&nbsp;</th>
+                    <th scope="col">Moneda</th>
+                    <th scope="col">Equivalente</th>
+                </tr>
+            </thead>
+        {% for clave, valor in conversiones.items %}
+            <tbody>
+                <tr>
+                    <th scope="row">&nbsp;</th>
+                    <td>{{clave}}</td>
+                    <td>{{valor}}</td>
+                </tr>
+            </tbody>
+        {% endfor %}
+    </table>
+    {% endif %}
 {% endblock %}
