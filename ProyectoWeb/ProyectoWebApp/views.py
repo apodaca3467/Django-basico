@@ -3,31 +3,31 @@ from django.shortcuts import render, HttpResponse
 # Create your views here.
 
 def index(request):
-    return HttpResponse("Index")
+    return render(request, 'ProyectoWebApp/index.html')
 
 def convertir_PesoMexicano(request):
-    return HttpResponse("Convertir pesos mexicanos")
+    return render(request, 'ProyectoWebApp/PesoMexicano.html')
 
 def convertir_PesoColombiano(request):
-    return HttpResponse("Convertir pesos colombianos")
+    return render(request, 'ProyectoWebApp/PesoColombiano.html')
 
 def convertir_PesoChileno(request):
-    return HttpResponse("Convertir pesos chilenos")
+    return render(request, 'ProyectoWebApp/PesoChileno.html')
 
 def convertir_PesoArgentino(request):
-    return HttpResponse("Convertir pesos argentinos")
+    return render(request, 'ProyectoWebApp/PesoArgentino.html')
 
 def convertir_DolarAmericano(request):
-    return HttpResponse("Convertir dolar americano")
+    return render(request, 'ProyectoWebApp/DolarAmericano.html')
 
 def convertir_DolarCanadiense(request):
-    return HttpResponse("Convertir dolar canadiense")
+    return render(request, 'ProyectoWebApp/DolarCanadiense.html')
 
 def convertir_DolarAustraliano(request):
-    return HttpResponse("Convertir dolar australiano")
+    return render(request, 'ProyectoWebApp/DolarAustraliano.html')
 
 def convertir_Euro(request):
-    return HttpResponse("Convertir euros")
+    return render(request, 'ProyectoWebApp/Euro.html')
 
 def convertir_Rublo(request):
-    return HttpResponse("Convertir rublos")
+    return render(request, 'ProyectoWebApp/Rublo.html')
