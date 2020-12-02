@@ -6,14 +6,35 @@
 <form class="form-inline">
     <p> &iquest;Planeando viajar dentro o fuera de Colombia? &iexcl;Excelente, aqu&iacute; puedes cambiar tus monedas! </p>
     <p> Obtendr&aacute;s equivalencias en todos los dolares, pesos, euros y rublos soportados por el sistema </p>
-    <div class="form-group mb-2">
-        <label for="lbCantidad" class="sr-only">Cantidad</label>
-        <input type="text" readonly class="form-control-plaintext" id="lbCantidad">
-    </div>
+    <br>
+    
     <div class="form-group mx-sm-3 mb-2">
         <label for="tbCantidad" class="sr-only">Cantidad</label>
-        <input type="number" class="form-control" id="tbCantidad" placeholder="Pesos colombianos" name="tbCantidad">
+        <input type="number" class="form-control" id="tbCantidad" placeholder="Pesos colombianos" name="tbCantidad" required>
     </div>
     <button type="submit" class="btn btn-primary mb-2">Convertir</button>
 </form>
+
+{% if conversiones %}
+    
+    <h3>Conversiones según los datos que introduciste</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">&nbsp;</th>
+                <th scope="col">Moneda</th>
+                <th scope="col">Equivalente</th>
+            </tr>
+        </thead>
+    {% for clave, valor in conversiones.items %}
+        <tbody>
+            <tr>
+                <th scope="row">&nbsp;</th>
+                <td>{{clave}}</td>
+                <td>{{valor}}</td>
+            </tr>
+        </tbody>
+    {% endfor %}
+</table>
+{% endif %}
 {% endblock %}
