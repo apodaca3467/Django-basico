@@ -5,6 +5,33 @@ from django.shortcuts import render, HttpResponse
 def index(request):
     return render(request, 'ProyectoWebApp/index.html')
 
+def PesoMexicano(request):
+    return render(request, 'ProyectoWebApp/PesoMexicano.html')
+
+def PesoColombiano(request):
+    return render(request, 'ProyectoWebApp/PesoColombiano.html')
+
+def PesoChileno(request):
+    return render(request, 'ProyectoWebApp/PesoChileno.html')
+
+def PesoArgentino(request):
+    return render(request, 'ProyectoWebApp/PesoArgentino.html')
+
+def DolarAmericano(request):
+    return render(request, 'ProyectoWebApp/DolarAmericano.html')
+
+def DolarCanadiense(request):
+    return render(request, 'ProyectoWebApp/DolarCanadiense.html')
+
+def DolarAustraliano(request):
+    return render(request, 'ProyectoWebApp/DolarAustraliano.html')
+
+def Euro(request):
+    return render(request, 'ProyectoWebApp/Euro.html')
+
+def Rublo(request):
+    return render(request, 'ProyectoWebApp/Rublo.html')
+
 def convertir_PesoMexicano(request):
     return render(request, 'ProyectoWebApp/PesoMexicano.html')
 
