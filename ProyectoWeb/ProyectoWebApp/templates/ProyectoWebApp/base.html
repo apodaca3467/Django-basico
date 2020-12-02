@@ -22,16 +22,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{% url 'Index' %}">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Dolares
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Dolar australiano</a>
-                        <a class="dropdown-item" href="#">Dolar canadiense</a>
-                        <a class="dropdown-item" href="#">Dolar estadounidense</a>
+                        <a class="dropdown-item" href="{% url 'pagina_DolarAustraliano' %}">Dolar australiano</a>
+                        <a class="dropdown-item" href="{% url 'pagina_DolarCanadiense' %}">Dolar canadiense</a>
+                        <a class="dropdown-item" href="{% url 'pagina_DolarAmericano' %}">Dolar estadounidense</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -39,17 +39,17 @@
                         Pesos
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Peso argentino</a>
-                        <a class="dropdown-item" href="#">Peso chileno</a>
-                        <a class="dropdown-item" href="#">Peso colombiano</a>
-                        <a class="dropdown-item" href="#">Peso mexicano</a>
+                        <a class="dropdown-item" href="{% url 'pagina_PesoArgentino' %}">Peso argentino</a>
+                        <a class="dropdown-item" href="{% url 'pagina_PesoChileno' %}">Peso chileno</a>
+                        <a class="dropdown-item" href="{% url 'pagina_PesoColombiano' %}">Peso colombiano</a>
+                        <a class="dropdown-item" href="{% url 'pagina_PesoMexicano' %}">Peso mexicano</a>
                     </div>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Euro <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{% url 'pagina_Euro' %}">Euro <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Rublo <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{% url 'pagina_Rublo' %}">Rublo <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
@@ -63,7 +63,7 @@
     <!-- FOOTER-->
     <blockquote class="blockquote">
         <p class="mb-0">Sistema b&aacute;sico desarrollado con Django en MVC</p>
-        <footer class="blockquote-footer">Jes&uacute;s Ruiz. Todos los derechos reservados. <cite title="Source Title">1 de diciembre de 2020</cite></footer>
+        <footer class="blockquote-footer"><cite title="Source Title">Jes&uacute;s Ruiz Apodaca, todos los derechos reservados. 1 de diciembre de 2020</cite></footer>
     </blockquote>
 </body>
 <!-- JS  -->

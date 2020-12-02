@@ -4,15 +4,16 @@ from ProyectoWebApp import views
 urlpatterns = [
     path('', views.index, name='Index'),
 
-    path('PesoChileno', views.convertir_PesoChileno, name='cPesoChileno'),
-    path('PesoMexicano', views.convertir_PesoMexicano, name='cPesoMexicano'),
-    path('PesoArgentino', views.convertir_PesoArgentino, name='cPesoArgentino'),
-    path('PesoColombiano', views.convertir_PesoColombiano, name='cPesoColombiano'),
+    # name es el nombre por el cual invocas al hacer los href en los html
+    path('PesoChileno', views.convertir_PesoChileno, name='pagina_PesoChileno'),
+    path('PesoMexicano', views.convertir_PesoMexicano, name='pagina_PesoMexicano'),
+    path('PesoArgentino', views.convertir_PesoArgentino, name='pagina_PesoArgentino'),
+    path('PesoColombiano', views.convertir_PesoColombiano, name='pagina_PesoColombiano'),
 
-    path('DolarAmericano', views.convertir_DolarAmericano, name='cDolarAmericano'),
-    path('DolarCanadiense', views.convertir_DolarCanadiense, name='cDolarCanadiense'),
-    path('DolarAustraliano', views.convertir_DolarAustraliano, name='cDolarAustraliano'),
+    path('DolarAmericano', views.convertir_DolarAmericano, name='pagina_DolarAmericano'),
+    path('DolarCanadiense', views.convertir_DolarCanadiense, name='pagina_DolarCanadiense'),
+    path('DolarAustraliano', views.convertir_DolarAustraliano, name='pagina_DolarAustraliano'),
 
-    path('Euro', views.convertir_Euro, name='cEuro'),
-    path('Rublo', views.convertir_Rublo, name='cRublo'),
+    path('Euro', views.convertir_Euro, name='pagina_Euro'),
+    path('Rublo', views.convertir_Rublo, name='pagina_Rublo'),
 ]
