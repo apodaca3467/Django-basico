@@ -82,7 +82,7 @@ def convertir_PesoColombiano(request):
     _dConversion['Rublo ruso'] = 0 if ctd == -1 else round(ctd * 0.021, 3)
 
     _dContenedor['conversiones'] = _dConversion
-    return render(request, 'ProyectoWebApp/PesoColombiano.html')
+    return render(request, 'ProyectoWebApp/PesoColombiano.html', _dContenedor)
 
 def convertir_PesoChileno(request):
     try:
@@ -106,7 +106,7 @@ def convertir_PesoChileno(request):
     _dConversion['Rublo ruso'] = 0 if ctd == -1 else round(ctd * 0.1, 3)
 
     _dContenedor['conversiones'] = _dConversion
-    return render(request, 'ProyectoWebApp/PesoChileno.html')
+    return render(request, 'ProyectoWebApp/PesoChileno.html', _dContenedor)
 
 def convertir_PesoArgentino(request):
     try:
@@ -130,7 +130,7 @@ def convertir_PesoArgentino(request):
     _dConversion['Rublo ruso'] = 0 if ctd == -1 else round(ctd * 0.93, 3)
 
     _dContenedor['conversiones'] = _dConversion
-    return render(request, 'ProyectoWebApp/PesoArgentino.html')
+    return render(request, 'ProyectoWebApp/PesoArgentino.html', _dContenedor)
 
 def convertir_DolarAmericano(request):
     try:
@@ -154,7 +154,7 @@ def convertir_DolarAmericano(request):
     _dConversion['Rublo ruso'] = 0 if ctd == -1 else round(ctd * 75.83, 3)
 
     _dContenedor['conversiones'] = _dConversion
-    return render(request, 'ProyectoWebApp/DolarAmericano.html')
+    return render(request, 'ProyectoWebApp/DolarAmericano.html', _dContenedor)
 
 def convertir_DolarCanadiense(request):
     try:
@@ -178,7 +178,7 @@ def convertir_DolarCanadiense(request):
     _dConversion['Rublo ruso'] = 0 if ctd == -1 else round(ctd * 58.61, 3)
 
     _dContenedor['conversiones'] = _dConversion
-    return render(request, 'ProyectoWebApp/DolarCanadiense.html')
+    return render(request, 'ProyectoWebApp/DolarCanadiense.html', _dContenedor)
 
 def convertir_DolarAustraliano(request):
     try:
@@ -202,7 +202,7 @@ def convertir_DolarAustraliano(request):
     _dConversion['Rublo ruso'] = 0 if ctd == -1 else round(ctd * 55.9, 3)
 
     _dContenedor['conversiones'] = _dConversion
-    return render(request, 'ProyectoWebApp/DolarAustraliano.html')
+    return render(request, 'ProyectoWebApp/DolarAustraliano.html', _dContenedor)
 
 def convertir_Euro(request):
     try:
@@ -226,7 +226,7 @@ def convertir_Euro(request):
     _dConversion['Rublo ruso'] = 0 if ctd == -1 else round(ctd * 91.53, 3)
 
     _dContenedor['conversiones'] = _dConversion
-    return render(request, 'ProyectoWebApp/Euro.html')
+    return render(request, 'ProyectoWebApp/Euro.html', _dContenedor)
 
 def convertir_Rublo(request):
     try:
@@ -250,4 +250,4 @@ def convertir_Rublo(request):
     _dConversion['Rublo ruso'] = 0 if ctd == -1 else round(ctd, 3)
 
     _dContenedor['conversiones'] = _dConversion
-    return render(request, 'ProyectoWebApp/Rublo.html')
+    return render(request, 'ProyectoWebApp/Rublo.html', _dContenedor)
