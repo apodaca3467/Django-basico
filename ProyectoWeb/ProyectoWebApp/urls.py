@@ -2,9 +2,17 @@ from django.urls import path
 from ProyectoWebApp import views
 
 urlpatterns = [
-    path('', views.home, name='Home'),
-    path('servicios', views.servicios, name='Servicios'),
-    path('tienda', views.tienda, name='Tienda'),
-    path('blog', views.blog, name='Blog'),
-    path('contacto', views.contacto, name='Contacto'), #name es la vista que se llama
+    path('', views.index, name='Index'),
+
+    path('PesoChileno', views.convertir_PesoChileno, name='cPesoChileno'),
+    path('PesoMexicano', views.convertir_PesoMexicano, name='cPesoMexicano'),
+    path('PesoArgentino', views.convertir_PesoArgentino, name='cPesoArgentino'),
+    path('PesoColombiano', views.convertir_PesoColombiano, name='cPesoColombiano'),
+
+    path('DolarAmericano', views.convertir_DolarAmericano, name='cDolarAmericano'),
+    path('DolarCanadiense', views.convertir_DolarCanadiense, name='cDolarCanadiense'),
+    path('DolarAustraliano', views.convertir_DolarAustraliano, name='cDolarAustraliano'),
+
+    path('Euro', views.convertir_Euro, name='cEuro'),
+    path('Rublo', views.convertir_Rublo, name='cRublo'),
 ]
